@@ -1,2 +1,2 @@
 # DesignLoop Research Lab
-## A HCI lab
+![image](design-loop.jpeg)
