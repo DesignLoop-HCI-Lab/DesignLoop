@@ -1,14 +1,36 @@
-
 body {
   font-family: Arial, sans-serif;
-  margin: 2em;
-  background: #fff;
+  margin: 0;
+  background: #f4f5f7; /* soft light gray */
   color: #333;
 }
-a { color: #1e90ff; }
-header, footer {
-  background: #484D53;
+
+header {
+  background: #484D53; /* dark gray from logo */
   color: white;
   padding: 1em;
   text-align: center;
+}
+
+header a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  margin: 0 1em;
+}
+
+nav {
+  margin-top: 0.5em;
+}
+
+main {
+  padding: 2em;
+}
+
+footer {
+  background: #484D53;
+  color: white;
+  text-align: center;
+  padding: 1em;
+  margin-top: 2em;
 }
