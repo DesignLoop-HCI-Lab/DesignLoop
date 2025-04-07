@@ -5,5 +5,5 @@
 </p>
 
 <p style="text-align: center;">
-    Welcome to **Design Loop**, a Human-Computer Interaction lab focused on designing the future of human-centered systems.
+    Welcome to Design Loop, a Human-Computer Interaction lab focused on designing the future of human-centered systems.
 </p>
