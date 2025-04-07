@@ -1,19 +1,19 @@
 body {
   font-family:Arial, Helvetica, sans-serif, sans-serif;
   margin: 0;
-  background: whitesmoke; /* soft light gray */
+  background: #333; /* soft light gray */
   color: white;
 }
 
 header {
   background: #484D53; /* dark gray from logo */
-  color: whitesmoke;
+  color: white;
   padding: 1em;
   text-align: center;
 }
 
 header a {
-  color: whitesmoke;
+  color: white;
   text-decoration: none;
   font-weight: bold;
   margin: 0 1em;
