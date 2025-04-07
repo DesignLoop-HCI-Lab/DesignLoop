@@ -1,5 +1,6 @@
 
 title: Design Loop
+layouts_dir: _layouts
 description: Human-Computer Interaction Lab
 baseurl: ""
 url: "https://designloop-hci-lab.github.io/DesignLoop"
