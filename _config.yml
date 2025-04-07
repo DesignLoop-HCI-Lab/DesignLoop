@@ -2,6 +2,6 @@
 title: Design Loop
 layouts_dir: _layouts
 description: Human-Computer Interaction Lab
-baseurl: ""
+baseurl: "https://designloop-hci-lab.github.io/DesignLoop"
 url: "https://designloop-hci-lab.github.io/DesignLoop"
 theme: minima
