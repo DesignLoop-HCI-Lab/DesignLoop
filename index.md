@@ -1,8 +1,4 @@
 
----
-layout: home
-title: Welcome to Design Loop
----
 
 <img src="./assets/images/logo.png" alt="Design Loop Logo" width="200" />
 
