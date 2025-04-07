@@ -7,7 +7,7 @@ body {
 
 header {
   background: #484D53; /* dark gray from logo */
-  color: white;
+  color: #484D53;
   padding: 1em;
   text-align: center;
 }
@@ -29,7 +29,7 @@ main {
 
 footer {
   background: #484D53;
-  color: white;
+  color: #484D53;
   text-align: center;
   padding: 1em;
   margin-top: 2em;
