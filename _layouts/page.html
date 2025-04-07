@@ -1,14 +1,26 @@
-
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <title>{{ page.title }}</title>
-  <link rel="stylesheet" href="/assets/styles.css">
+  <link rel="stylesheet" href="/assets/styles.css" />
 </head>
-<body>
-  <header><h1><a href="/">Design Loop</a></h1></header>
-  <main>{{ content }}</main>
-  <footer><p>© Design Loop HCI Lab</p></footer>
+<body class="home">
+  <header>
+    <h1><a href="/">Design Loop</a></h1>
+    <nav>
+      <a href="/">Home</a>
+      <a href="/projects/">Projects</a>
+      <a href="/researchers/">Researchers</a>
+      <a href="/contact/">Contact</a>
+    </nav>
+  </header>
+  <main>
+    {{ content }}
+  </main>
+  <footer>
+    <p>© Design Loop HCI Lab</p>
+  </footer>
 </body>
 </html>
+
