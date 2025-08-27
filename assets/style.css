@@ -1,3 +1,12 @@
 body {
   font-family: 'Helvetica Neue', sans-serif;
 }
+
+
+.logo{
+    width: 300px;       /* Fixed width in pixels */
+    height: 300px;      /* Fixed height in pixels */ 
+     display: block;       /* Required for margin auto to work */
+     margin-left: auto;    /* Auto left margin */
+    margin-right: auto;
+}
