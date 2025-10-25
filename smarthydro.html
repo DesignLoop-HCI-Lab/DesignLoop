@@ -3,11 +3,26 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>DesignLoop | HCI Lab</title>
+  <title>DesignLoop | SmartHydro</title>
+
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
   <link rel="stylesheet" href="assets/style.css">
+
+  <style>
+    .modal-backdrop { background: rgba(2,6,10,0.75); }
+    .thumb-img { width: 84px; height: 84px; object-fit: cover; border-radius: 0.5rem; }
+    .partner-img { max-width:100%; max-height:100%; object-fit: contain; }
+    .pdf-thumb { width: 120px; height: 150px; object-fit: cover; border-radius: 0.5rem; }
+    @media (max-width: 520px) {
+      .thumb-img { width:64px; height:64px; }
+      .pdf-thumb { width:100px; height:120px; }
+    }
+  </style>
 </head>
+
 <body class="bg-gray-900 text-white font-sans">
+
+  <!-- NAV -->
   <nav class="bg-gray-800 p-4 shadow-md">
     <div class="container mx-auto flex items-center justify-between">
       <a href="index.html" class="flex items-center space-x-3">
@@ -23,18 +38,195 @@
       </div>
     </div>
   </nav>
-  <main class="p-3 text-center">
-    <h1 class="text-4xl font-bold mb-0">SmartHydro</h1>
-    <p class="text-lg text-gray-300">Exploring rural agricultural innovation.</p>
-  </main>
 
+  <!-- HERO SECTION -->
+  <header class="text-center py-10">
+    <h1 class="text-4xl font-bold mb-2">SmartHydro, AI and IoT Enabled Hydroponic Grow Tents</h1>
+    <p class="text-lg text-gray-300 max-w-2xl mx-auto">
+      Co-designing digital agriculture systems for resilient, community-driven food production.
+    </p>
+  </header>
 
+<!-- HERO IMAGE -->
+<div class="flex justify-center mt-6 mb-6">
+  <img src="assets/Edna and healthy crop.jpg"
+       alt="SmartHydro grow tent prototype"
+       class="rounded-2xl shadow-lg w-full max-w-4xl border border-gray-800">
+</div>
 
- 
+  <!-- INTRO / PROJECT SYNOPSIS -->
+  <section class="max-w-4xl mx-auto px-6 text-gray-300 text-center mb-10">
+    <p>
+      Our solar powered hydroponic grow tents bring together artificial intelligence and Internet of Things sensing 
+      to support small scale, water efficient food production in areas where electricity and internet access are often unreliable. 
+      The real innovation lies in how these systems were created. Each tent was developed as a technology probe, a working prototype 
+      placed in real rural settings so that farmers could test, question, and reshape the design with us.
+    </p>
+    <p class="mt-4">
+      Through workshops and practical experimentation, farmers and community partners co designed the system. 
+      They decided which data were useful, how automation should behave, and how control should remain in their hands. 
+      Their ideas led to a design that can run both online and offline, store data locally, and allow users to override 
+      automated decisions whenever they choose.
+    </p>
+    <p class="mt-4">
+      The result is a growing system built for African conditions, powered by the sun, easy to repair, and simple to maintain. 
+      It strengthens farmer agency and highlights how innovation can respect local knowledge. These tents are more than technological tools, 
+      they are community built research spaces that show how digital agriculture can succeed when technology and local expertise evolve together.
+    </p>
+  </section>
 
+  <!-- IMAGE GALLERY -->
+  <section class="text-center mb-12">
+    <h2 class="text-2xl font-semibold mb-4">Gallery</h2>
+    <div class="flex justify-center flex-wrap gap-3">
+      <button onclick="openMedia({type:'img', src:'assets/edna.jpeg'})">
+        <img src="assets/edna.jpeg" alt="SmartHydro Tent 1" class="thumb-img border border-gray-700">
+      </button>
+      <button onclick="openMedia({type:'img', src:'assets/crops.jpeg'})">
+        <img src="assets/crops.jpeg" alt="SmartHydro Tent 2" class="thumb-img border border-gray-700">
+      </button>
+      <button onclick="openMedia({type:'img', src:'assets/app.jpeg'})">
+        <img src="assets/app.jpeg" alt="SmartHydro Tent 3" class="thumb-img border border-gray-700">
+      </button>
+      <button onclick="openMedia({type:'img', src:'assets/flower.jpeg'})">
+        <img src="assets/flower.jpeg" alt="SmartHydro Tent 3" class="thumb-img border border-gray-700">
+      </button>
+      <button onclick="openMedia({type:'img', src:'assets/tentf.JPG'})">
+        <img src="assets/tentf.JPG" alt="SmartHydro Tent 3" class="thumb-img border border-gray-700">
+      </button>
+      <button onclick="openMedia({type:'img', src:'assets/tent.JPG'})">
+        <img src="assets/tent.JPG" alt="SmartHydro Tent 3" class="thumb-img border border-gray-700">
+      </button>
+      <button onclick="openMedia({type:'img', src:'assets/fulltunnel.jpg'})">
+        <img src="assets/fulltunnel.jpg" alt="SmartHydro Tent 3" class="thumb-img border border-gray-700">
+      </button>
+      <button onclick="openMedia({type:'img', src:'assets/shadenet.jpg'})">
+        <img src="assets/shadenet.jpg" alt="SmartHydro Tent 3" class="thumb-img border border-gray-700">
+      </button>
+      <button onclick="openMedia({type:'img', src:'assets/morefodder.jpeg'})">
+        <img src="assets/morefodder.jpeg" alt="SmartHydro Tent 3" class="thumb-img border border-gray-700">
+      </button>
+      <button onclick="openMedia({type:'img', src:'assets/otjisa.jpg'})">
+        <img src="assets/otjisa.jpg" alt="SmartHydro Tent 3" class="thumb-img border border-gray-700">
+      </button>
+      <button onclick="openMedia({type:'img', src:'assets/donkerbos.jpg'})">
+        <img src="assets/donkerbos.jpg" alt="SmartHydro Tent 3" class="thumb-img border border-gray-700">
+      </button>
+      <button onclick="openMedia({type:'img', src:'assets/greenfodder.jpeg'})">
+        <img src="assets/greenfodder.jpeg" alt="SmartHydro Tent 3" class="thumb-img border border-gray-700">
+      </button>
+      <button onclick="openMedia({type:'img', src:'assets/fodder.jpg'})">
+        <img src="assets/fodder.jpg" alt="SmartHydro Tent 3" class="thumb-img border border-gray-700">
+      </button>
+      <button onclick="openMedia({type:'img', src:'assets/swtunnel.jpg'})">
+        <img src="assets/swtunnel.jpg" alt="SmartHydro Tent 3" class="thumb-img border border-gray-700">
+      </button>
+    </div>
+  </section>
+
+  <!-- PARTNERS -->
+  <section class="text-center mb-12">
+    <h2 class="text-2xl font-semibold mb-4">Partners</h2>
+    <div class="flex justify-center flex-wrap gap-4 items-center">
+      <a href="#" class="bg-gray-900 p-2 rounded-md border border-gray-700 flex items-center justify-center w-28 h-12">
+        <img src="assets/nust.jpeg" alt="University Partner" class="partner-img">
+      </a>
+      <a href="#" class="bg-gray-900 p-2 rounded-md border border-gray-700 flex items-center justify-center w-28 h-12">
+        <img src="assets/hsrc.png" alt="NGO Partner" class="partner-img">
+      </a>
+      <a href="#" class="bg-gray-900 p-2 rounded-md border border-gray-700 flex items-center justify-center w-28 h-12">
+        <img src="assets/aalborg.jpeg" alt="Industry Partner" class="partner-img">
+      </a>
+      <a href="#" class="bg-gray-900 p-2 rounded-md border border-gray-700 flex items-center justify-center w-28 h-12">
+        <img src="assets/uct.png" alt="Industry Partner" class="partner-img">
+      </a>
+    </div>
+  </section>
+
+  <!-- ACADEMIC ARTICLES -->
+  <section class="text-center mb-12">
+    <h2 class="text-2xl font-semibold mb-4">Academic Articles</h2>
+    <div class="flex justify-center gap-4 flex-wrap">
+      <div class="cursor-pointer" onclick="openMedia({type:'pdf', src:'assets/offgrid.pdf'})">
+        <img src="assets/offgrid.png" alt="Paper 1" class="pdf-thumb border border-gray-700">
+        <div class="text-gray-400 text-xs mt-2">Off the grid</div>
+      </div>
+      <div class="cursor-pointer" onclick="openMedia({type:'pdf', src:'assets/buildingsh.pdf'})">
+        <img src="assets/buildingsh.png" alt="Paper 2" class="pdf-thumb border border-gray-700">
+        <div class="text-gray-400 text-xs mt-2">Building SmartHyrdo</div>
+      </div>
+      <div class="cursor-pointer" onclick="openMedia({type:'pdf', src:'assets/devil.pdf'})">
+        <img src="assets/devil.png" alt="Paper 2" class="pdf-thumb border border-gray-700">
+        <div class="text-gray-400 text-xs mt-2">Lessons Learned</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LINKS -->
+  <section class="text-center mb-16">
+    <h2 class="text-2xl font-semibold mb-4">Explore the Project</h2>
+    <div class="flex justify-center gap-3 flex-wrap">
+      <a class="inline-flex items-center gap-2 px-3 py-2 rounded-md bg-blue-700 hover:bg-blue-600 border border-gray-700 text-sm" href="#" target="https://github.com/SmartHydroVC">
+        <img src="assets/github.png" alt="GitHub" class="h-5 w-5"> GitHub
+      </a>
+      <a class="inline-flex items-center gap-2 px-3 py-2 rounded-md bg-blue-700 hover:bg-blue-600 border border-gray-700 text-sm" href="#" target="www.google.com">
+        <img src="assets/icons/thingspeak.png" alt="ThingSpeak" class="h-5 w-5"> ThingSpeak
+      </a>
+      <a class="inline-flex items-center gap-2 px-3 py-2 rounded-md bg-blue-700 hover:bg-blue-600 border border-gray-700 text-sm" href="#" target="_blank">
+        <img src="assets/icons/render.png" alt="Render" class="h-5 w-5"> Render
+      </a>
+      <a class="inline-flex items-center gap-2 px-3 py-2 rounded-md bg-blue-700 hover:bg-blue-600 border border-gray-700 text-sm" href="#" target="_blank">
+        <img src="assets/icons/playstore.png" alt="Play Store" class="h-5 w-5"> Play Store
+      </a>
+    </div>
+  </section>
+
+  <!-- MODAL VIEWER -->
+  <div id="mediaModal" class="fixed inset-0 modal-backdrop hidden items-center justify-center z-50">
+    <div class="bg-gray-800 rounded-lg max-w-5xl w-full mx-4 md:mx-0 overflow-hidden">
+      <div id="modalContent" class="p-4 flex flex-col">
+        <div id="modalMedia" class="flex items-center justify-center"></div>
+        <div class="mt-3 flex justify-between items-center">
+          <a id="openInNew" class="px-3 py-1 bg-gray-700 rounded text-sm" href="#" target="_blank">Open in new tab</a>
+          <button type="button" onclick="closeModal()" class="px-3 py-1 bg-red-600 rounded text-sm">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- JS -->
+  <script>
+    function openMedia(item) {
+      const modal = document.getElementById('mediaModal');
+      const container = document.getElementById('modalMedia');
+      const openNew = document.getElementById('openInNew');
+      container.innerHTML = '';
+
+      if (item.type === 'img') {
+        const img = document.createElement('img');
+        img.src = item.src;
+        img.alt = 'Preview';
+        img.className = 'max-w-full max-h-[70vh] rounded';
+        container.appendChild(img);
+        openNew.href = item.src;
+      } else if (item.type === 'pdf') {
+        const iframe = document.createElement('iframe');
+        iframe.src = item.src;
+        iframe.className = 'w-full h-[70vh]';
+        container.appendChild(iframe);
+        openNew.href = item.src;
+      }
+
+      modal.classList.remove('hidden');
+      modal.classList.add('flex');
+    }
+
+    function closeModal() {
+      const modal = document.getElementById('mediaModal');
+      document.getElementById('modalMedia').innerHTML = '';
+      modal.classList.add('hidden');
+    }
+  </script>
 
 </body>
-
-
-
 </html>
