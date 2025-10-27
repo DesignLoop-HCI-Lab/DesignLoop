@@ -17,6 +17,11 @@
       .thumb-img { width:64px; height:64px; }
       .pdf-thumb { width:100px; height:120px; }
     }
+
+    #mediaModal {
+  overflow-y: auto;
+  padding: 2rem 0;
+}
   </style>
 </head>
 
@@ -166,9 +171,10 @@
   <section class="text-center mb-16">
     <h2 class="text-2xl font-semibold mb-4">Explore the Project</h2>
     <div class="flex justify-center gap-3 flex-wrap">
-      <a class="inline-flex items-center gap-2 px-3 py-2 rounded-md bg-blue-700 hover:bg-blue-600 border border-gray-700 text-sm" href="#" target="https://github.com/SmartHydroVC">
-        <img src="assets/github.png" alt="GitHub" class="h-5 w-5"> GitHub
-      </a>
+        <a class="inline-flex items-center gap-2 px-3 py-2 rounded-md bg-blue-700 hover:bg-blue-600 border border-gray-700 text-sm"
+          href="https://github.com/SmartHydroVC" target="_blank" rel="noopener">
+          <img src="assets/github.png" alt="GitHub" class="h-5 w-5"> GitHub
+        </a>
       <a class="inline-flex items-center gap-2 px-3 py-2 rounded-md bg-blue-700 hover:bg-blue-600 border border-gray-700 text-sm" href="#" target="www.google.com">
         <img src="assets/icons/thingspeak.png" alt="ThingSpeak" class="h-5 w-5"> ThingSpeak
       </a>
@@ -201,21 +207,30 @@
       const container = document.getElementById('modalMedia');
       const openNew = document.getElementById('openInNew');
       container.innerHTML = '';
+        if (item.type === 'img') 
+        {
+          const img = document.createElement('img');
+          img.src = item.src;
+          img.alt = 'Preview';
+          // keep the image centered and scaled within the viewport
+          img.className = 'max-w-[90vw] max-h-[85vh] w-auto h-auto object-contain rounded shadow-lg mx-auto';
+          container.style.display = 'flex';
+          container.style.justifyContent = 'center';
+          container.style.alignItems = 'center';
+          container.style.overflow = 'hidden';
+          container.appendChild(img);
+          openNew.href = item.src;
+        } 
+        
+        else if (item.type === 'pdf') {
+          const iframe = document.createElement('iframe');
+          iframe.src = item.src;
+          iframe.className = 'w-full h-[70vh] rounded border border-gray-700';
+          container.appendChild(iframe);
+          openNew.href = item.src;
 
-      if (item.type === 'img') {
-        const img = document.createElement('img');
-        img.src = item.src;
-        img.alt = 'Preview';
-        img.className = 'max-w-full max-h-[70vh] rounded';
-        container.appendChild(img);
-        openNew.href = item.src;
-      } else if (item.type === 'pdf') {
-        const iframe = document.createElement('iframe');
-        iframe.src = item.src;
-        iframe.className = 'w-full h-[70vh]';
-        container.appendChild(iframe);
-        openNew.href = item.src;
-      }
+        }
+
 
       modal.classList.remove('hidden');
       modal.classList.add('flex');

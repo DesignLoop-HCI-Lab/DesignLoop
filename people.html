@@ -6,8 +6,19 @@
   <title>People | DesignLoop</title>
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
   <link rel="stylesheet" href="assets/style.css">
+  <style>
+    .profile-img {
+      width: 160px;
+      height: 160px;
+      object-fit: cover;
+      border-radius: 9999px;
+      border: 3px solid #1e3a8a;
+    }
+  </style>
 </head>
+
 <body class="bg-gray-900 text-white font-sans">
+  <!-- NAV -->
   <nav class="bg-gray-800 p-4 shadow-md">
     <div class="container mx-auto flex items-center justify-between">
       <a href="index.html" class="flex items-center space-x-3">
@@ -17,14 +28,203 @@
       <div class="space-x-6">
         <a href="index.html" class="hover:text-blue-400">Home</a>
         <a href="projects.html" class="hover:text-blue-400">Projects</a>
-        <a href="people.html" class="hover:text-blue-400">People</a>
+        <a href="people.html" class="hover:text-blue-400 font-semibold">People</a>
         <a href="contact.html" class="hover:text-blue-400">Contact</a>
       </div>
     </div>
   </nav>
+
+  <!-- HEADER -->
   <main class="p-6 text-center">
-    <h1 class="text-4xl font-bold mb-4">People</h1>
-    <p class="text-lg text-gray-300">Meet our team of researchers, collaborators, and students.</p>
+    <h1 class="text-4xl font-bold mb-2">People</h1>
+    <p class="text-lg text-gray-300 mb-10">Meet our team of researchers, collaborators, and students.</p>
   </main>
+
+  <!-- RESEARCHERS GRID -->
+  <section class="container mx-auto px-6 pb-16">
+    <div class="grid gap-10 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 justify-items-center">
+
+      <!-- Researcher Card -->
+      <div class="bg-gray-800 bg-opacity-60 border border-gray-700 rounded-xl p-6 text-center max-w-sm">
+        <img src="assets/sarina.png" alt="Sarina Till" class="profile-img mx-auto mb-4">
+        <h2 class="text-xl font-semibold">Sarina Till</h2>
+        <p class="text-blue-400 font-medium mb-2">Chief Investigator (CI)</p>
+        <div class="flex justify-center gap-3 mb-3">
+          <a href="https://orcid.org/0000-0003-3281-1484" target="_blank" rel="noopener">
+            <img src="assets/orcid.png" alt="ORCID" class="h-6 w-6">
+          </a>
+          <a href="https://scholar.google.com/citations?user=to3LYSkAAAAJ&hl=en&oi=ao" target="_blank" rel="noopener">
+            <img src="assets/scholar.png" alt="Google Scholar" class="h-6 w-6">
+          </a>
+          <a href="mailto:ctill@varsitycollege.co.za">
+            <img src="assets/email.png" alt="Email" class="h-6 w-6">
+          </a>
+        </div>
+        <p class="text-gray-300 text-sm">
+          Sarina leads research on co-designing digital agricultural systems in rural Africa, exploring how AI and IoT 
+          technologies can empower local farmers through participatory design and community engagement.
+        </p>
+      </div>
+
+      <!-- Researcher 2 -->
+      <div class="bg-gray-800 bg-opacity-60 border border-gray-700 rounded-xl p-6 text-center max-w-sm">
+        <img src="assets/wilson.png" alt="John Doe" class="profile-img mx-auto mb-4">
+        <h2 class="text-xl font-semibold">Taryn Wilson</h2>
+        <p class="text-green-400 font-medium mb-2">Co-Investigator (Co-I)</p>
+        <div class="flex justify-center gap-3 mb-3">
+          <a href="https://orcid.org/0009-0005-1434-903X" target="_blank" rel="noopener">
+            <img src="assets/orcid.png" alt="ORCID" class="h-6 w-6">
+          </a>
+          <a href="https://scholar.google.com/citations?user=h26qjtcAAAAJ&hl=en&oi=ao" target="_blank" rel="noopener">
+            <img src="assets/scholar.png" alt="Google Scholar" class="h-6 w-6">
+          </a>
+          <a href="mailto:twilson@varsitycollege.co.za">
+            <img src="assets/email.png" alt="Email" class="h-6 w-6">
+          </a>
+        </div>
+        <p class="text-gray-300 text-sm">
+          John’s work focuses on human-computer interaction and sustainability, developing hybrid digital systems that 
+          support environmental monitoring and local innovation through open hardware and data transparency.
+        </p>
+      </div>
+
+      <!-- Researcher 3 -->
+      <div class="bg-gray-800 bg-opacity-60 border border-gray-700 rounded-xl p-6 text-center max-w-sm">
+        <img src="assets/rossie.png" alt="Jane Smith" class="profile-img mx-auto mb-4">
+        <h2 class="text-xl font-semibold">Taryn Ross</h2>
+        <p class="text-green-400 font-medium mb-2">Lab Manager (Co-I)</p>
+        <div class="flex justify-center gap-3 mb-3">
+          
+          <a href="mailto:tross@varsitycollege.co.za">
+            <img src="assets/email.png" alt="Email" class="h-6 w-6">
+          </a>
+        </div>
+        <p class="text-gray-300 text-sm">
+          Taryn ensures the smooth operation of the lab, providing operational support , grant application support, logistics she ensures
+          compliance , she tracks and monitors ethical clearance processes and approvals. She oversees the project plannin and execution 
+          of our research projects, managers grants and funders and handles all our reporting. 
+        </p>
+      </div>
+
+    </div>
+  </section>
+   <!-- STUDENT RESEARCHERS GRID -->
+  <section class="container mx-auto px-6 pb-16">
+    <div class="grid gap-10 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 justify-items-center">
+
+        <!-- Researcher 2 -->
+      <div class="bg-gray-800 bg-opacity-60 border border-gray-700 rounded-xl p-6 text-center max-w-sm">
+        <img src="assets/reece.png" alt="John Doe" class="profile-img mx-auto mb-4">
+        <h2 class="text-xl font-semibold">Reece Wanvig</h2>
+        <p class="text-green-400 font-medium mb-2">Co-Investigator (Co-I)</p>
+        <div class="flex justify-center gap-3 mb-3">
+          <a href="https://orcid.org/0009-0005-1434-903X" target="_blank" rel="noopener">
+            <img src="assets/orcid.png" alt="ORCID" class="h-6 w-6">
+          </a>
+          <a href="https://scholar.google.com/citations?user=h26qjtcAAAAJ&hl=en&oi=ao" target="_blank" rel="noopener">
+            <img src="assets/scholar.png" alt="Google Scholar" class="h-6 w-6">
+          </a>
+          <a href="mailto:rvanwig@varsitycollege.co.za">
+            <img src="assets/email.png" alt="Email" class="h-6 w-6">
+          </a>
+        </div>
+        <p class="text-gray-300 text-sm">
+          John’s work focuses on human-computer interaction and sustainability, developing hybrid digital systems that 
+          support environmental monitoring and local innovation through open hardware and data transparency.
+        </p>
+      </div>
+
+
+        <!-- Researcher 3 -->
+      <div class="bg-gray-800 bg-opacity-60 border border-gray-700 rounded-xl p-6 text-center max-w-sm">
+        <img src="assets/yusra.png" alt="Jane Smith" class="profile-img mx-auto mb-4">
+        <h2 class="text-xl font-semibold">Yusra Adnan</h2>
+        <p class="text-green-400 font-medium mb-2">Junior Researcher (SR)</p>
+        <div class="flex justify-center gap-3 mb-3">
+          
+          <a href="mailto:tross@varsitycollege.co.za">
+            <img src="assets/email.png" alt="Email" class="h-6 w-6">
+          </a>
+        </div>
+        <p class="text-gray-300 text-sm">
+         Yusra is a passionate Computer Science lecturer and Junior Researcher  at Emeris's Durban North campus,
+          specializing in teaching programming modules in Java, C#, and React Native.
+           She really enjoy helping students from non-technical backgrounds develop strong coding and problem-solving skills through engaging,
+            hands-on lessons and interactive analogies. Her research interests lies in the creation of tinyML models aimed at rural african settings,
+            working closely with the community to develop software, AI models and other technologies that are contextually relevant and inclusive.
+
+ 
+        </p>
+      </div>
+
+      <!-- Researcher Card -->
+      <div class="bg-gray-800 bg-opacity-60 border border-gray-700 rounded-xl p-6 text-center max-w-sm">
+        <img src="assets/leigh.jpeg" alt="Sarina Till" class="profile-img mx-auto mb-4">
+        <h2 class="text-xl font-semibold">Leighché Jaikarran</h2>
+        <p class="text-white-400 font-medium mb-2">Student Researcher (SR)</p>
+        <div class="flex justify-center gap-3 mb-3">
+          <a href="https://orcid.org/0000-0003-3281-1484" target="_blank" rel="noopener">
+            <img src="assets/orcid.png" alt="ORCID" class="h-6 w-6">
+          </a>
+          <a href="https://scholar.google.com/citations?user=to3LYSkAAAAJ&hl=en&oi=ao" target="_blank" rel="noopener">
+            <img src="assets/scholar.png" alt="Google Scholar" class="h-6 w-6">
+          </a>
+          <a href="mailto:ctill@varsitycollege.co.za">
+            <img src="assets/email.png" alt="Email" class="h-6 w-6">
+          </a>
+        </div>
+        <p class="text-gray-300 text-sm">
+          In addition to his role as a student researcher who trains various tinyML models developed for intermittent electricity and internet access, 
+          Leighché's is  a BI & Sales Operations Manager 
+          at Amazon South Africa, specialising in solutions development and workflow automation within the Amazon Marketplace
+           for Product and AWS MENA TECH. As the subject matter expert for reporting and Salesforce, I use Python, SQL, and Amazon’s 
+           internal tools to build scalable reporting pipelines that drive strategic decisions.
+            My role bridges analytics and execution, designing, automating,
+             and optimising campaign frameworks to ensure data directly supports business growth.
+        </p>
+      </div>
+
+    
+
+      <!-- Researcher 3 -->
+      <div class="bg-gray-800 bg-opacity-60 border border-gray-700 rounded-xl p-6 text-center max-w-sm">
+        <img src="assets/mishka.png" alt="Jane Smith" class="profile-img mx-auto mb-4">
+        <h2 class="text-xl font-semibold">Mishka Dewlok</h2>
+        <p class="text-white-400 font-medium mb-2">Student Researcher (SR)</p>
+        <div class="flex justify-center gap-3 mb-3">
+          
+          <a href="mailto:tross@varsitycollege.co.za">
+            <img src="assets/email.png" alt="Email" class="h-6 w-6">
+          </a>
+        </div>
+        <p class="text-gray-300 text-sm">
+          Talent Zhou is a registered Industrial & Organisational Psychologist and a Business Learning Partner. She holds a Masters Degree in Industrial Psychology and 
+          currently pursuing a postgraduate diploma in Data Analytics, with research focusing on the integration of Artificial Intelligence (AI) and the Internet of Things (IoT)
+           to enhance efficiency in hydroponic farming and support data-driven decision-making. Her interdisciplinary work bridges psychology, technology
+          , and analytics to explore how intelligent systems can enable learning, performance, and sustainable development across various fields. 
+        </p>
+      </div>
+
+      <!-- Researcher 3 -->
+      <div class="bg-gray-800 bg-opacity-60 border border-gray-700 rounded-xl p-6 text-center max-w-sm">
+        <img src="assets/talentb.png" alt="Jane Smith" class="profile-img mx-auto mb-4">
+        <h2 class="text-xl font-semibold">Talent Zhou</h2>
+        <p class="text-white-400 font-medium mb-2">Student Researcher (SR)</p>
+        <div class="flex justify-center gap-3 mb-3">
+          
+          <a href="mailto:tross@varsitycollege.co.za">
+            <img src="assets/email.png" alt="Email" class="h-6 w-6">
+          </a>
+        </div>
+        <p class="text-gray-300 text-sm">
+          Mishka is  a postgraduate student researcher with a background in Computer and Information Sciences and Data Analytics.
+          Her research lies in intersection of technology, education and social impact, focusing on co-designing inclusive, 
+          data-driven solutions for low-resource communities in South Africa.
+ 
+        </p>
+      </div>
+
+    </div>
+  </section>
 </body>
 </html>
